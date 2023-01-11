@@ -1,0 +1,116 @@
+/* Import Poppins - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --clr-bkg: #e8e7e8;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--clr-bkg);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.563em;
+}
+
+button {
+  padding: .625em 1.375em;
+  border: none;
+  outline: none;
+  font-size: 1.125em;
+  font-weight: 400;
+  text-transform: capitalize;  
+  transition: transform 0.2s ease;
+  box-shadow: 0 .313em .625em #00000033;
+  cursor: pointer;
+}
+
+/* Button 1 */
+.button1 {
+  color: #014f53;
+  background: #01ced8;
+}
+
+.button1:hover {
+  color: #8af9fe;
+  background: #049ea6;
+  transition-delay: .1s;
+  transform: translate(20px);
+}
+
+/* Button 2 */
+.button2 {
+  color: #e9c7fa;
+  background: #c23bfc;
+  border-radius: .75em;
+}
+
+.button2:hover {
+  color: #e4d4fd;
+  background: #8124fa; 
+  transition-delay: .1s;
+  transform: translate(-20px);
+}
+
+/* Button 3 */
+.button3 { 
+  color: #c3c3c3;
+  background: #373838;
+  border-radius: 1.5em;
+}
+
+.button3:hover {
+  color: #202020;
+  background: #737474;
+  transition-delay: .1s;
+  transform: translateY(10px);
+}
+
+/* Button 4 */
+.button4 {
+  color: #ebc89c;
+  background: #643801;
+  border-radius: .625em 6.25em / 7.5em;
+}
+
+.button4:hover {
+  color: #371e00;
+  background: #8d6029;
+  transition-delay: .1s;
+  transform: translateY(-10px);
+}
+
+/* Button 5 */
+.button5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #b9fcb0;
+  background: #129801;
+  font-size: .015em;
+}
+
+.button5:hover {
+  color: #0e4f06;
+  background: #2ffd14;
+  transition-delay: .1s;
+  transform: translate(20px, 20px);
+}
